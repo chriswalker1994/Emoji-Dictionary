@@ -11,57 +11,21 @@ import UIKit
 class DefinitionViewController: UIViewController {
     @IBOutlet weak var definitionlabel: UILabel!
     
-    @IBOutlet weak var EmojiLabel: UILabel!
+    @IBOutlet weak var emojilabel: UILabel!
     @IBOutlet weak var Birthlabel: UILabel!
     @IBOutlet weak var Categorylabel: UILabel!
     
-    var emoji = "No Emoji"
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        EmojiLabel.text = emoji
-        
-        if emoji == "😃" {
-            definitionlabel.text = "A happy face!"
-            Categorylabel.text = "Category: Smiley"
-            Birthlabel.text = "Birthyear: 2001"
-            
-        }
-        if emoji == "😇" {
-            definitionlabel.text = "You have a Halo!"
-            Categorylabel.text = "Category: Smiley"
-            Birthlabel.text = "Birthyear: 2005"
-            
-        }
-        
-        if emoji == "🤡" {
-            definitionlabel.text = "Killer Clown!!!!"
-            Categorylabel.text = "Category: Smiley"
-            Birthlabel.text = "Birthyear: 2010"
-        }
-        
-        if emoji == "💋" {
-            definitionlabel.text = "Kiss!"
-            Categorylabel.text = "Category: Body Parts"
-            Birthlabel.text = "Birthyear: 2009"
-            
-        }
-        
-        if emoji == "😎" {
-            definitionlabel.text = "Coolness!"
-            Categorylabel.text = "Category: Smiley"
-            Birthlabel.text = "Birthyear: 2004"
-            
-        }
-        
-        if emoji == "💩" {
-            definitionlabel.text = "SHIT!"
-            Categorylabel.text = "Category: Smiley"
-            Birthlabel.text = "Birthyear: 1999"
-        }
-        
+        emojilabel.text = emoji.StringEmoji
+        Birthlabel.text = "BirthYear: \(emoji.BirthYear)"
+        Categorylabel.text = "Category: \(emoji.category)"
+        definitionlabel.text = emoji.defenition
+       
         
         
         

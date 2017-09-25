@@ -96,8 +96,8 @@
                     <connections>
                         <outlet property="Birthlabel" destination="Rf5-iR-wYr" id="Aoy-Ev-qQZ"/>
                         <outlet property="Categorylabel" destination="dbL-yM-Fr4" id="99g-uT-4Yv"/>
-                        <outlet property="EmojiLabel" destination="5Ff-Rx-Un5" id="DRo-oM-4Kb"/>
                         <outlet property="definitionlabel" destination="5B0-8L-IUb" id="v2A-lQ-GMB"/>
+                        <outlet property="emojilabel" destination="5Ff-Rx-Un5" id="RQj-Fx-giF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOU-KV-xpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
